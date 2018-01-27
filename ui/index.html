@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+
+		<title>My App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Angular files -->
+		<script type="text/javascript" src="frameworks/angular/angular.min.js"></script>
+		<script type="text/javascript" src="frameworks/angular/angular-route.min.js"></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Angular App file -->
+		<script type="text/javascript" src="scripts/app.js"></script>
+
+		<!-- Custom CSS & JS files -->
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+	</head>
+	<body>
+		<div class="container m-container">
+			<header>Cloudboost</header>
+			<div ng-hide="isActive()">
+				<a class="btn btn-xs btn-primary" href="#!/home">JSON</a>
+				<a class="btn btn-xs btn-primary" href="#!/thumbnail">Create Thumbnail</a>
+				<a class="btn btn-xs btn-link" href="#!/login">Logout</a>
+			</div>
+			<div id="messageBox"></div>
+			<main ng-view></main>
+			<footer></footer>
+		</div>
+	</body>
+</html>

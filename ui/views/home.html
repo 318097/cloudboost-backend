@@ -1,0 +1,15 @@
+<div class="content">
+	<h2>Apply JSON patch request</h2>	
+	<form ng-submit="applyJsonPatch()">
+		<textarea class="form-control" rows="10" ng-model="jsonObject" placeholder="JSON object" ></textarea>
+		<textarea class="form-control" rows="8" ng-model="jsonPatchObject" placeholder="JSON patch object" ></textarea>
+		<input class="btn btn-success" type="submit" value="Upload" />
+	</form>
+
+	<hr/>
+
+	<div class="well" ng-if="patch">
+		<h3>Patched result :</h3>
+		<div>{{patch}}</div>
+	</div>
+</div>
